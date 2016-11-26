@@ -1,4 +1,4 @@
-var commentInput = $("#comment-input")
+3var commentInput = $("#comment-input")
 var commentDisplay = $(".comment-display")
 
 commentInput.keydown(function(e) {
@@ -8,5 +8,5 @@ commentInput.keydown(function(e) {
 })
 
 onNewListItem("comments", function(newComment) {
-  commentDisplay.append("<span>" + newComment + "</span>")
+  commentDisplay.append("<div>" + newComment + "</div>")
 })
