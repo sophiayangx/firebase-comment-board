@@ -1,4 +1,4 @@
-3var commentInput = $("#comment-input")
+var commentInput = $("#comment-input")
 var commentDisplay = $(".comment-display")
 
 commentInput.keydown(function(e) {
