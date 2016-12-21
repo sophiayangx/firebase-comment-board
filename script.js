@@ -1,7 +1,7 @@
 console.log("hi")
 
 var commentInput = $("#comment-input")
-var commentDisplay = $(".comment-display")
+var commentDisplay = $("#comment-display")
 //
 //commentInput.keydown(function(e) {
 //  if (e.keyCode == "13") {
@@ -15,11 +15,11 @@ var commentDisplay = $(".comment-display")
 
 commentInput.keydown(function(e) {	
   if (e.keyCode == "13") {
-    var valueToSave = input.val();
+    var valueToSave = commentInput.val();
     addListItem("sophiasList", valueToSave);
   }
 })
 
 onNewListItem("sophiasList", function(value) {
-  $("#firebase-display").append("<div>" + value + "</div>")
+  commentDisplay.append("<div>" + value + "</div>")
 }) 
