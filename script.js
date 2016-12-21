@@ -1,8 +1,10 @@
+console.log("hi")
+
 var commentInput = $("#comment-input")
 var commentDisplay = $(".comment-display")
 
 commentInput.keydown(function(e) {
-  if (e.which == 13) {
+  if (e.which === 13) {
     addListItem("comments", commentInput.val());
   }
 })
